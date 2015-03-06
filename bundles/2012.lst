@@ -1,0 +1,6 @@
+# first add path to package in repo.lst
+# package name with no tag assumes trunk
+# blank lines and lines beginning with # are ignored
+include common.lst
+# new trigger efficiency tool
+TauFakeRates-12-00-07 atlasusr/morgens

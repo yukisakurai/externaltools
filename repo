@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+from toolman import packages
+from toolman.argparse import ArgumentParser
+
+parser = ArgumentParser()
+subparsers = parser.add_subparsers()
+
+parser_show = subparsers.add_parser('show')
+parser_show.set_defaults(op=packages.show_repo)
+
+parser_used = subparsers.add_parser('used')
+parser_used.add_argument('bundle')
+parser_used.set_defaults(op=packages.show_used)
+
+parser_tags = subparsers.add_parser('tags')
+parser_tags.add_argument('-u', '--user', required=True)
+parser_tags.add_argument('package')
+parser_tags.set_defaults(op=packages.show_tags)
+
+parser_updates = subparsers.add_parser('updates')
+parser_updates.add_argument('-u', '--user', required=True)
+parser_updates.add_argument('bundle')
+parser_updates.set_defaults(op=packages.show_updates)
+
+parser_fetch = subparsers.add_parser('fetch')
+parser_fetch.add_argument('-u', '--user', required=True)
+parser_fetch.add_argument('bundles', nargs='+')
+parser_fetch.set_defaults(op=packages.fetch)
+
+args = parser.parse_args()
+cmd_args = dict(args._get_kwargs())
+del cmd_args['op']
+args.op(**cmd_args)

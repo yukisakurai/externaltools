@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [ -d src/common/PATCore ]
+then
+    echo "patching PATCore ..."
+    cp patches/PATCore/config.h src/common/PATCore/PATCore/.
+    mkdir src/common/PATCore/PATCore/RootCore
+    touch src/common/PATCore/PATCore/RootCore/Packages.h
+fi
+
+if [ -d src/common/TauTriggerEmulation ]
+then
+    echo "patching TauTriggerEmulation ..."
+    share=src/common/TauTriggerEmulation/share
+    cp patches/TauTriggerEmulation/config_EF_DiTau.xml $share
+    cp patches/TauTriggerEmulation/config_EF_DiTau_with_resurrected.xml $share
+    cp patches/TauTriggerEmulation/EF_tau29_medium1_tau20_medium1_Hypo_00_02_35.xml $share/triggers/TrigTauHypo_00_02_35/
+    cp patches/TauTriggerEmulation/EF_tau29_medium1_tau20_medium1_Hypo_00_02_42.xml $share/triggers/TrigTauHypo_00_02_42/
+    cp patches/TauTriggerEmulation/EF_tau29_medium1_tau20_medium1_Hypo_00_03_02.xml $share/triggers/TrigTauHypo_00_03_02/
+    cp patches/TauTriggerEmulation/EF_tau29T_medium1_tau20T_medium1_Hypo_00_03_02.xml $share/triggers/TrigTauHypo_00_03_02/
+fi
+
+if [ -d src/common/TauTriggerCorrections ]
+then
+    echo "patching TauTriggerCorrections ..."
+    if [ -d src/common/TauTriggerCorrections/root ]
+    then
+        mv src/common/TauTriggerCorrections/root src/common/TauTriggerCorrections/share
+    fi
+fi
+
+if [ -d src/common/JVFUncertaintyTool ]
+then
+    echo "patching JVFUncertaintyTool ..."
+	cp patches/JVFUncertaintyTool/* src/common/JVFUncertaintyTool/Root/.
+fi

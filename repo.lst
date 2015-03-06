@@ -1,0 +1,83 @@
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/StandardSelectorTools
+atlasoff/PhysicsAnalysis/AnalysisCommon/PATCore
+
+# https://twiki.cern.ch/twiki/bin/viewauth/Atlas/GoodRunsLists
+atlasoff/DataQuality/GoodRunsLists
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/ExtendedPileupReweighting
+atlasoff/PhysicsAnalysis/AnalysisCommon/PileupReweighting
+
+# https://twiki.cern.ch/twiki/bin/viewauth/Atlas/TriggerD3PDMaker
+atlasoff/Trigger/TrigAnalysis/TrigRootAnalysis
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/MissingETUtility
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/METUtilUserGuide
+atlasoff/Reconstruction/MissingETUtility
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/JetCalibrationToolsForPhysicsAnalyses
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/JetUncertainties2011
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/JetUncertainties2012
+atlasoff/Reconstruction/Jet/JetUncertainties
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/JVFUncertaintyTool
+atlasoff/Reconstruction/Jet/JetAnalysisTools/JVFUncertaintyTool
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/JetEnergyResolutionProvider
+atlasoff/Reconstruction/Jet/JetResolution
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/ApplyJetCalibration2011
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/ApplyJetCalibration2012
+atlasoff/Reconstruction/Jet/ApplyJetCalibration
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/ApplyJetResolutionSmearing
+atlasperf/CombPerf/JetETMiss/JetCalibrationTools/ApplyJetResolutionSmearing
+
+atlasoff/PhysicsAnalysis/MuonID/MuonIDAnalysis/MuonMomentumCorrections
+atlasoff/PhysicsAnalysis/MuonID/MuonIDAnalysis/MuonEfficiencyCorrections
+atlasoff/PhysicsAnalysis/MuonID/MuonIDAnalysis/MuonIsolationCorrection
+
+atlasoff/PhysicsAnalysis/TauID/TauDiscriminant
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/MissingMassCalculator
+atlasoff/PhysicsAnalysis/AnalysisCommon/MissingMassCalculator
+
+atlasoff/PhysicsAnalysis/HiggsPhys/ggFReweighting
+
+# https://twiki.cern.ch/twiki/bin/view/Atlas/TrigMuonEfficiency
+atlasoff/Trigger/TrigAnalysis/TrigMuonEfficiency
+
+atlasoff/Reconstruction/egamma/egammaAnalysis/egammaAnalysisUtils
+atlasoff/Reconstruction/egamma/egammaEvent
+
+atlasphys/Physics/Higgs/HSG4/software/hadhad/TauFakeRates
+
+# https://twiki.cern.ch/twiki/bin/viewauth/Atlas/TileTripReader
+atlasoff/PhysicsAnalysis/TileID/TileTripReader
+
+atlasoff/PhysicsAnalysis/TauID/TauCorrUncert
+
+# https://twiki.cern.ch/twiki/bin/viewauth/Atlas/TapmTau
+atlasoff/Trigger/TrigAnalysis/TrigTauAnalysis/TrigTauEfficiency
+atlasoff/Trigger/TrigAnalysis/TrigTauAnalysis/TrigTauEmulation
+
+atlasusr/morgens/TauFakeRates
+atlasusr/mbecking/HSG4TriggerSF
+atlasusr/wdavey/TauTriggerCorrections
+atlasusr/wdavey/TauTriggerEmulation
+
+# VBF filtering
+atlasphys/Physics/Higgs/HSG4/software/common/VBFFilterOLR
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/HiggsToTauTauEmbeddedCorrections2013
+atlasphys/Physics/Higgs/HSG4/software/embedding/EmbeddedCorrections
+
+# HSG4LepLepTriggerSF
+atlasusr/dellasta/HSG4LepLepTriggerSF
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/TElectronEfficiencyCorrectionTool
+atlasoff/PhysicsAnalysis/ElectronPhotonID/ElectronEfficiencyCorrection
+
+# https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/BCHCleaningTool
+atlasoff/Reconstruction/Jet/JetAnalysisTools/BCHCleaningTool
+
+atlas-ysakurai/ysakurai/HtautauCPAna

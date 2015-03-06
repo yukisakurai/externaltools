@@ -1,0 +1,5 @@
+# first add path to package in repo.lst
+# package name with no tag assumes trunk
+# blank lines and lines beginning with # are ignored
+include common.lst
+TauFakeRates atlasphys/Physics/Higgs/HSG4/software/hadhad
